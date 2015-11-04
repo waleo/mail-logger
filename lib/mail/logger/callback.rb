@@ -1,6 +1,6 @@
 class Mail::Logger::Callback
   def self.delivered_email(email)
-    Mail::Logger.logger.info email.inspect
+    Mail::Logger.logger.info email.body
   end
 end
 
